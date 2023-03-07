@@ -35,7 +35,7 @@ class Server {
         this.app.use( cors() );
 
         // Lectura y parseo del body, recibe las req en tipo JSON
-        this.app.use( express.json() );
+        this.app.use(express.json());
 
         // Directorio Público
         this.app.use(express.static('public'));

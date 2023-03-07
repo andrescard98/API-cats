@@ -54,7 +54,9 @@ const catsPut = async (req, res = response) => {
 }
 
 const catsPost = async (req = request, res = response) => {
-
+    /* console.log({
+        body: req.body
+    }); */
     const { nombre, edad, genero, img } = req.body;
     const cat = new Cat({ nombre, edad, genero, img });
 
